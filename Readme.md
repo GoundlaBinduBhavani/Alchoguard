@@ -47,18 +47,6 @@ A0         | MQ-3 OUT
 2. Upload provided Arduino sketch
 3. Power system using 9V battery
 
-## Code Snippet (Core Logic)
-cpp
-void loop() {
-  int sensorValue = analogRead(A0);
-  if(sensorValue > THRESHOLD) {  // Custom threshold
-    digitalWrite(RELAY_PIN, LOW); // Cut engine
-    digitalWrite(BUZZER_PIN, HIGH); // Alert
-  } else {
-    digitalWrite(RELAY_PIN, HIGH); // Normal operation
-  }
-}
-
 
 ## Specifications
 - **Response Time**: <2 seconds
